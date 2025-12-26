@@ -48,11 +48,9 @@ By completing this chapter, I gained:
 - Familiarity with industry-standard tooling like nodemon
 
 ## Why This Chapter Is Important
-
 npm is the backbone of the Node.js ecosystem. Learning how to manage dependencies and scripts is essential for building scalable applications and working in real-world development environments.
 
 This chapter lays the groundwork for:
-
 - Installing Express.js and other frameworks
 - Managing third-party libraries
 - Building maintainable backend applications
