@@ -16,3 +16,6 @@ process.on("exit", (code) => {
   console.log(code);
 });
 console.log("7.end of script"); //simple console run immediately
+
+//Sync code → Microtasks → Timers → I/O → setImmediate → exit
+//Promises always run before timers, even with setTimeout(..., 0).
