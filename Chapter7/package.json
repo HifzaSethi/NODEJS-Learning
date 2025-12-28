@@ -1,0 +1,18 @@
+{
+  "name": "npm-test",
+  "version": "1.0.0",
+  "description": "this project is for npm learning",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon appnext.js"
+  },
+  "author": "Hifza Sethi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
