@@ -1,0 +1,74 @@
+<%- include('partials/head') %>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+<%- include('partials/header') %>
+
+  <!-- Hero Section -->
+  <main class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-pink-100 to-red-100 pt-24">
+    <div class="text-center max-w-2xl">
+      <h2 class="text-5xl font-extrabold text-gray-800 mb-6">
+        Welcome to <span class="text-red-500">Airbnb</span>
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Discover amazing places to stay around the world, or share your home with travelers.
+      </p>
+      <a href="/host/add-home" 
+         class="px-8 py-4 rounded-2xl bg-red-500 text-white text-xl font-semibold shadow-lg hover:bg-red-600 hover:shadow-xl transition duration-300">
+         ➕ Add Your Home
+      </a>
+     <h2 class="mt-10 text-3xl font-bold">Here is our home list</h2>
+
+<ul class="mt-6 space-y-2 ">
+<% registerHome.forEach(home => { %>
+    <li class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+      <div class="relative">
+        <img src="<%= home.PhotoUrl %>" alt="Photo of <%= home.homeName %>" class=" mt-6 ml-6 w-44 h-44 object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center space-x-1">
+          <span class="text-yellow-500 text-sm">⭐</span>
+          <span class="text-gray-800 font-semibold text-sm"><%= home.Rating %></span>
+        </div>
+      </div>
+      
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-500 transition-colors duration-200"><%= home.homeName %></h3>
+        
+        <div class="space-y-3">
+          <div class="flex items-center text-gray-600">
+            <svg class="w-4 h-4 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <span class="text-sm"><%= home.homeLocation %></span>
+          </div>
+          
+          <div class="flex items-center justify-between pt-2 border-t border-gray-100">
+            <div class="flex items-center">
+              <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+              <span class="text-2xl font-bold text-gray-900">pkr<%= home.Price %></span>
+              <span class="text-gray-500 text-sm ml-1">/ night</span>
+            </div>
+            
+            <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 text-sm">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  <% }) %>
+</ul>
+
+        </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner p-6 text-center text-gray-500">
+    © 2025 Airbnb Clone | Designed with ❤️ by Hifza
+  </footer>
+</body>
+</html>

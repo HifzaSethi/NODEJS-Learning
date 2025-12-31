@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 60vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Button / Link */
+main a {
+  display: inline-block;
+  background-color: #ff5a5f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 90, 95, 0.3);
+}
+
+main a:hover {
+  background-color: #e0484d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255, 90, 95, 0.4);
+}
+
+main a:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(255, 90, 95, 0.2);
+}
