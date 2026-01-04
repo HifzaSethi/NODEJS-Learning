@@ -1,0 +1,15 @@
+  <header class="bg-white shadow-md fixed w-full top-0 z-10">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
+      <h1 class="text-red-500 text-3xl font-bold">Airbnb</h1>
+      <nav class="space-x-6 text-gray-600 font-medium">
+          <a href="/" class="<%= currentPage ==='index'? 'bg-red-500':  'hover:text-red-500' %> py-2 px-2 rounded transition duration-300">Air bnb</a>
+        <a href="/home-list" class="<%= currentPage ==='Home'? 'bg-red-500':  'hover:text-red-500' %> py-2 px-2 rounded transition duration-300">Home-List</a>
+        <a href="/host/add-home" class="<%= currentPage ==='add-home'? 'bg-red-500':  'hover:text-red-500' %> py-2 px-2 rounded transition duration-300">AddHome</a>
+         <a href="/host/host-home-list" class="<%= currentPage ==='HostHomes'? 'bg-red-500':  'hover:text-red-500' %> py-2 px-2 rounded transition duration-300">HostHomes</a>
+        <a href="/booking" class="<%= currentPage ==='booking'? 'bg-red-500':  'hover:text-red-500' %> py-2 px-2 rounded transition duration-300">Booking</a>
+        <a href="/fvrt-list" class="<%= currentPage ==='fvrt-list'? 'bg-red-500':  'hover:text-red-500' %> py-2 px-2 rounded transition duration-300">Favourites</a>
+      
+      
+      </nav>
+    </div>
+  </header>
